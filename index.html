@@ -133,6 +133,19 @@
   .card-link.private::before{content:'🔒 '; font-size:11px;}
   .card-link.private:hover{text-decoration:none;}
 
+  /* PIPELINE STRIP */
+  .pipeline{
+    margin-top:28px; padding:20px 24px; border:1px solid var(--line); border-radius:6px;
+    display:flex; align-items:baseline; gap:20px; flex-wrap:wrap;
+  }
+  .pipeline-label{
+    font-size:12px; color:var(--slate); text-transform:uppercase; letter-spacing:0.08em;
+    white-space:nowrap; flex-shrink:0;
+  }
+  .pipeline-items{display:flex; flex-wrap:wrap; gap:10px 22px;}
+  .pipeline-item{font-size:13.5px; color:var(--ivory);}
+  .pipeline-item em{font-style:normal; color:var(--slate);}
+
   /* ABOUT / STACK STRIP */
   .about{display:grid; grid-template-columns:1fr 1fr; gap:60px;}
   .about h2{font-size:28px; margin-bottom:20px;}
@@ -181,7 +194,7 @@
     <div class="eyebrow">Winnipeg · iOS &amp; cross-platform</div>
     <h1>I build software that <em>ships</em>,<br>not just compiles.</h1>
     <p>Native iOS and Android apps, from a solver-verified puzzle engine to a two-platform product on a shared backend. Currently open to freelance builds for small businesses.</p>
-    <div class="hero-ctas">
+    <div class="hero-ctas'>
       <a href="#work" class="btn btn-primary">See the work</a>
       <a href="#contact" class="btn btn-ghost">Get in touch</a>
     </div>
@@ -193,7 +206,7 @@
   <div class="wrap">
     <div class="section-head">
       <h2>Selected work</h2>
-      <p>Six projects, three stages: shipped, in progress, and open source.</p>
+      <p>Two shipped products and an open-source contribution.</p>
     </div>
 
     <div class="projects">
@@ -218,33 +231,6 @@
 
       <div class="card">
         <div class="card-tiles"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-        <span class="status progress">In progress</span>
-        <h3>Matcha Pop-up Simulator</h3>
-        <p>A cozy iOS business sim — zero third-party dependencies, zero art assets. Every sound is synthesized, every visual is a system primitive.</p>
-        <div class="stack"><span>Swift</span><span>SwiftUI</span></div>
-        <span class="card-link private">Private repo — details on request</span>
-      </div>
-
-      <div class="card">
-        <div class="card-tiles"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-        <span class="status progress">In progress</span>
-        <h3>Sliding Tile Wars</h3>
-        <p>2048 crossed with Advance Wars. Balance tuned from 159 tests and headless simulated matches, not gut feel.</p>
-        <div class="stack"><span>Flutter</span><span>Dart</span></div>
-        <span class="card-link private">Private repo — details on request</span>
-      </div>
-
-      <div class="card">
-        <div class="card-tiles"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-        <span class="status progress">In progress</span>
-        <h3>Dental Job Hub</h3>
-        <p>A two-sided marketplace connecting dental practices with professionals — geo search, realtime chat, urgent-fill alerts.</p>
-        <div class="stack"><span>React Native</span><span>Supabase</span></div>
-        <span class="card-link private">Private repo — details on request</span>
-      </div>
-
-      <div class="card">
-        <div class="card-tiles"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <span class="status oss">Open source</span>
         <h3>OpenEmuAppleSilicon</h3>
         <p>A modernization fork of OpenEmu — Objective-C→Swift ports, async networking, SwiftUI, for a mature third-party codebase.</p>
@@ -252,6 +238,15 @@
         <a class="card-link" href="https://github.com/jquiogue-commits/OpenEmuAppleSilicon" target="_blank" rel="noopener">View on GitHub →</a>
       </div>
 
+    </div>
+
+    <div class="pipeline">
+      <span class="pipeline-label">Also in the pipeline</span>
+      <div class="pipeline-items">
+        <span class="pipeline-item">Matcha Pop-up Simulator <em>— iOS business sim</em></span>
+        <span class="pipeline-item">Sliding Tile Wars <em>— Flutter strategy game</em></span>
+        <span class="pipeline-item">Dental Job Hub <em>— iOS + Android marketplace</em></span>
+      </div>
     </div>
   </div>
 </section>
