@@ -101,6 +101,8 @@
     transition:background .3s;
   }
   .card:hover{background:var(--ink-2);}
+  .card-wide{grid-column:1 / -1;}
+  .card-wide p{max-width:600px;}
   .card-tiles{
     position:absolute; top:20px; right:20px; display:grid;
     grid-template-columns:repeat(3,10px); grid-template-rows:repeat(3,10px); gap:3px;
@@ -194,7 +196,7 @@
     <div class="eyebrow">Winnipeg · iOS &amp; cross-platform</div>
     <h1>I build software that <em>ships</em>,<br>not just compiles.</h1>
     <p>Native iOS and Android apps, from a solver-verified puzzle engine to a two-platform product on a shared backend. Currently open to freelance builds for small businesses.</p>
-    <div class="hero-ctas'>
+    <div class="hero-ctas">
       <a href="#work" class="btn btn-primary">See the work</a>
       <a href="#contact" class="btn btn-ghost">Get in touch</a>
     </div>
@@ -229,7 +231,7 @@
         <a class="card-link" href="https://wpgcardhub.app/" target="_blank" rel="noopener">wpgcardhub.app →</a>
       </div>
 
-      <div class="card">
+      <div class="card card-wide">
         <div class="card-tiles"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <span class="status oss">Open source</span>
         <h3>OpenEmuAppleSilicon</h3>
